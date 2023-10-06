@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgPrimary{
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hover-link:hover {
+  background-color: rgba(247, 244, 244, 0.1);
+  cursor: pointer;
+}
+
+.link-active {
+  background-color: rgba(247, 244, 244, 0.3);
+}
+
+.link-active:hover {
+  background-color: rgba(247, 244, 244, 0.1);
+}
+
+.bgc-gradient {
+  background: linear-gradient(0.1turn, #6d28d9, #d946ef);
+  width: 100%;
+}
+
+.scrollbar {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#C5C9D2] rounded-xl;
+}
+
+.task > ::-webkit-scrollbar-thumb {
+  @apply bg-sky-500 rounded-xl;
+}
